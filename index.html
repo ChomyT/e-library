@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Library Application</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+  <header>
+      <div class="logo"><a href="#">Tina</a></div>
+      <div class="mobile-menu" id="mobile">
+      <ul class="mobile__menu">       
+       <li class="menu-m"><a href="#home.html">Home</a></li>
+        <li class="menu-m"><a href="#about.html">About</a></li>
+        <li class="menu-m"><a href="#library.html">Library</a></li>
+        <li class="menu-m"><a href="#contact.html">Contact</a></li>
+        <li class="menu-m"><a href="#login.html">Login</a></li>
+        <li class="menu-m"><a href="#login.html">Borrow a book</a></li>
+      </div>
+    </ul>  
+    <nav class="desktop-menu">
+    <div class="desktop__menu">
+      <ul class="nav-menu">       
+      <a href="#"><li class="desk-menu">Home</li></a>
+      <a href="#"><li class="desk-menu">About</li></a>
+      <a href="#"><li class="desk-menu">Library</li></a>
+      <a href="#"><li class="desk-menu">Contact</li></a>
+      <a href="#"><li class="desk-menu">Login</li></a>
+      <a href="#"><li class="desk-menu">Borrow a book</li></a>
+      <div class="cart" id="cart"><span>&#128722</span></div>
+    </div>
+  </ul>
+  </nav>
+  <div class="hamburger" id="hamburger"><span>&#9776;</span></div>
+  </header>
+
+<div class="hero-section">
+  <div class="hero-1">
+  <h1> Tina's E-Library</h1>
+    <p class="hero-paragragh">Welcome to Tinahero-section's Library, your digital gateway to a world of knowledge and discovery!
+      We are thrilled to have you join our online community where the pages are limitless, and the possibilities endless. Whether you're an avid reader, a curious learner, or a researcher on a quest for information, our electronic library is here to cater to your intellectual needs.
+    </p>
+    <p class="hero-paragragh">To have access to the numerous books available sign-up using the form below</p>
+    <button class="heading-button">Read More</button>
+      </div>    
+  <div class="hero-2">
+  <input type="email" id="email" name="email" placeholder="Enter Email" required>
+  <input type="password" id="password" name="password" placeholder="Enter Password" required>
+  <button id="login" onClick="validateForm()">Login</button>
+</div>
+  </div>
+  </div>
+</div>
+
+<div class="see__more"><li class="seemore"><a href="#">See more</li></a></div>
+  <div class="carts-section">
+    <div class="books-container card">
+    <img src="images/course1.png" class="img">
+    <h5 class="title">Digital skills</h5>
+    <p class="info">This Books covers all the digital skills you might wan to learn about in 2024</p>
+    <div class="price-info">
+      <p class="price">Free</p>
+      <p class="price" >24hrs</p>
+      </div>
+    </div>
+    <div class="books-container card">
+      <img src="images/course4.png" class="img">
+      <h5 class="title">Digital skills</h5>
+      <p class="info">This Books covers all the digital skills you might wan to learn about in 2024</p>
+      <div class="price-info">
+        <p class="price">Free</p>
+        <p class="price" >24hrs</p>
+        </div>
+      </div>
+    
+      <div class="books-container card">
+        <img src="images/course3.png" class="img">
+        <h5 class="title">Digital skills</h5>
+        <p class="info">This Books covers all the digital skills you might wan to learn about in 2024</p>
+        <div class="price-info">
+          <p class="price">Free</p>
+          <p class="price">24hrs</p>
+        </div>
+      </div>
+      
+      <div class="books-container card">
+            <img src="images/course2.png" class="img">
+            <h5 class="title">Digital skills</h5>
+            <p class="info">This Books covers all the digital skills you might wan to learn about in 2024</p>
+            <div class="price-info">
+              <p class="price">Free</p>
+              <p class="price" >24hrs</p>
+              </div>
+              </div>
+            </div>
+            </div>
+            </div>
+    </div>
+    
+      
+    <div class="faqs-section">
+      <div class="faq1">          
+      <div class="faqs">
+       
+       <div class="hero-heading">
+        <svg xmlns="http://www.w3.org/2000/svg" id="star" width="40" height="41" fill="none" viewBox="0 0 40 41"><path fill="#AD28EB" d="M37.5 20.5a2.467 2.467 0 0 1-1.64 2.344l-9.913 3.604-3.603 9.911a2.5 2.5 0 0 1-4.688 0l-3.604-9.922-9.911-3.593a2.5 2.5 0 0 1 0-4.688l9.921-3.604 3.594-9.911a2.5 2.5 0 0 1 4.688 0l3.604 9.921 9.911 3.594A2.467 2.467 0 0 1 37.5 20.5Z"/></svg>
+        <h1 class="frequently-asked">Frequently asked Question</h1>
+      </div>
+      <div class="card1">
+      <div class="section">
+        <div class="question__section">
+        <h4 class="question__heading">is Frontend Mentor, and how will it help me?</h4>
+      
+      <!--svg for plus first and minus second-->
+            <svg xmlns="http://www.w3.org/2000/svg" class="open" width="30" height="31" fill="none" viewBox="0 0 30 31"><path fill="#AD28EB" d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z"/></svg>
+             <svg xmlns="http://www.w3.org/2000/svg" class="close" width="30" height="31" fill="none" viewBox="0 0 30 31"><path fill="#301534" d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.2 12.2 0 0 0 15 3.312Zm4.688 13.124h-9.375a.938.938 0 0 1 0-1.875h9.374a.938.938 0 0 1 0 1.876Z"/></svg>
+      
+            </div>
+            
+      <div class="answer__section">
+           <p class="answer__paragraph">Frontend Mentor offers realistic coding challenges to help developers improve their 
+          frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
+          all levels and ideal for portfolio building.
+      </p>
+      </div>
+      </div>
+    
+      <div class="section">
+        <div class="question__section">
+      <h4 class="question__heading">Is Frontend Mentor free?</h4>
+      <svg xmlns="http://www.w3.org/2000/svg" class="open" width="30" height="31" fill="none" viewBox="0 0 30 31"><path fill="#AD28EB" d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="close" width="30" height="31" fill="none" viewBox="0 0 30 31"><path fill="#301534" d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.2 12.2 0 0 0 15 3.312Zm4.688 13.124h-9.375a.938.938 0 0 1 0-1.875h9.374a.938.938 0 0 1 0 1.876Z"/></svg>
+    </div>
+      <div class="answer__section">
+      <p class="answer__paragraph">Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
+      option providing access to a range of projects suitable for all skill levels.
+      </p>
+      </div>
+      </div>
+    
+      <div class="section">
+        <div class="question__section">
+       <h4 class="question__heading">Can I use Frontend Mentor projects in my portfolio?</h4>
+      <svg xmlns="http://www.w3.org/2000/svg" class="open" width="30" height="31" fill="none" viewBox="0 0 30 31"><path fill="#AD28EB" d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg"  class="close" width="30" height="31" fill="none" viewBox="0 0 30 31"><path fill="#301534" d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.2 12.2 0 0 0 15 3.312Zm4.688 13.124h-9.375a.938.938 0 0 1 0-1.875h9.374a.938.938 0 0 1 0 1.876Z"/></svg>
+      </div>
+      </div>
+      <div class="answer__section">
+      <p class="answer__paragraph">Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+      way to showcase your skills to potential employers!</p>
+      </div>
+     
+    
+      <div class="section">
+      <div class="question__section">
+      <h4 class="question__heading">How can I get help if I'm stuck on a Frontend Mentor challenge?</h4>
+      <svg xmlns="http://www.w3.org/2000/svg" class="open" width="30" height="31" fill="none" viewBox="0 0 30 31"><path fill="#AD28EB" d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="close" width="30" height="31" fill="none" viewBox="0 0 30 31"><path fill="#301534" d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.2 12.2 0 0 0 15 3.312Zm4.688 13.124h-9.375a.938.938 0 0 1 0-1.875h9.374a.938.938 0 0 1 0 1.876Z"/></svg>
+      </div>
+      <div class="answer__section">
+      <p class="answer__paragraph">The best place to get help is inside Frontend Mentor's Discord community. There's a help 
+        channel where you can ask questions and seek support from other community members.</p>
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="faqs-image">      
+      <img src="images/online reading.png" class="img" width="300px" height="300px" align-items="center" margin-left="5rem">
+    </div>
+    </div>
+    </div>
+    </div>
+  
+  <Footer>
+<div><img src="logo" class="logo__image"></div>
+<div id="text__link" class="links">
+  <li>Know More About Us</li>
+  <li>get a book</li>
+  <li>lorem ipsum</li>
+ 
+
+</div>
+<div id="social__links" class="links">
+  <li>follow us on</li>
+  <li>facebook</li>
+  <li>instagram</li>
+  <li>linkedin</li>
+</div>
+<div id="more__links" class="links">
+  <li>follow us on</li>
+  <li>facebook</li>
+  <li>instagram</li>
+  <li>linkedin</li>
+</div>
+
+</div>
+  </Footer>
+
+
+  <script src="index.js">
+      
+  </script>
+</body>
+</html>
